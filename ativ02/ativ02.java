@@ -4,7 +4,6 @@ package ativ02;
 public class ativ02{
     public static void main(String[] args) {
 
-        //INSTANCIA A CLASSE
         Conta c1 = new Conta("romario", "099896378527");
         c1.saldo = 1200;
 
@@ -22,4 +21,6 @@ public class ativ02{
         c1.getSaldo();
         c2.getSaldo();
     }
+
+
 }

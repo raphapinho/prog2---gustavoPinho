@@ -22,10 +22,18 @@ class ContaCorrente extends Conta{
             System.out.println("você utilizou: " +divida+ " de cheque especial");
             System.out.println("você possue: " +chequeEsp+ " para retirar.");
             
-            return valor;
+            return getSaldo();
         }
 
-        return valor;
+        return getSaldo();
+    }
+
+    public static void main(String[] args) {
+        Conta c1 = new ContaCorrente("robert", "3489739847");
+        c1.setSaldo(1200);
+        c1.getSaldo();
+        c1.saque(200);
+        c1.getSaldo();
     }
 
 }

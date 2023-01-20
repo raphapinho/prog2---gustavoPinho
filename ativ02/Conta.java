@@ -9,10 +9,12 @@ class Conta extends Correntista{
 
     protected Conta(String nome, String cpf){
         super(nome, cpf);
-        
-    
+
     }
 
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
 
     //métodos
     protected double getSaldo(){
@@ -32,7 +34,7 @@ class Conta extends Correntista{
 
     }
 
-    protected void transferir(double valor , Conta to){
+    protected void transferir(double valor, Conta to){
         if( valor > 0 && valor <= this.saldo ){
             System.out.println("valor tranferido de R$" +valor+ " para o titular " + to.getNome()+ " de cpf: " + to.getCpf());
             this.saldo -= valor;

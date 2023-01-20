@@ -1,0 +1,9 @@
+Exercício
+Crie três classes:
+o Carro(abstrata),
+o Fusca(concreta) e
+o BMW(concreta).
+O método acelerar deve ser sobrescrito nas
+sub-classes.
+Crie também um método velocidadeMaxima,
+que o valor é passado por construtor.

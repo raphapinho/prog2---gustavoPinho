@@ -6,4 +6,8 @@ class ContaPoupança extends Conta{
         super(nome, cpf);
         
     }
+
+    public static void main(String[] args) {
+        
+    }
 }

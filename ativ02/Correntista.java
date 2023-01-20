@@ -18,6 +18,5 @@ public class Correntista {
         return cpf;
     }
 
-    public void saque(int i) {
-    }
+
 }
