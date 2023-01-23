@@ -11,7 +11,13 @@ public class ComprarIngresso {
 
     System.out.println("digite 1 para Ingresso normal e 2 para ingresso VIP: ");
     escolha1 = scan.nextInt();
+    
+    while (escolha1 != 1 && escolha1 != 2) {
+        System.out.println("coloque um caracter valido!");
 
+        System.out.println("digite 1 para Ingresso normal e 2 para ingresso VIP: ");
+        escolha1 = scan.nextInt();
+    }
     if(escolha1 == 1){
         //nomal
         Normal normal = new Normal();
@@ -21,6 +27,14 @@ public class ComprarIngresso {
         //VIP
         System.out.println("digite 1 para camarote superior e 2 para camarote inferior : ");
         escolha2 = scan.nextInt();
+
+        while (escolha1 != 1 && escolha1 != 2) {
+            System.out.println("coloque um caracter valido!");
+            
+            System.out.println("digite 1 para Ingresso normal e 2 para ingresso VIP: ");
+            escolha1 = scan.nextInt();
+        }
+
         if (escolha2 == 1) {
             //camarote superior
             IngressoSuperior ISuper = new IngressoSuperior();
@@ -32,8 +46,8 @@ public class ComprarIngresso {
             IInfer.ImprimeValor();
         }
 
-    } else {
-        System.out.println("ultilize um inteiro aceitavel");
     }
+
+    System.out.println("compra finalizada.");
 }
 }

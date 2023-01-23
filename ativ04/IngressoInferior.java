@@ -4,6 +4,11 @@ public class IngressoInferior extends VIP {
 
     }
 
+    @Override
+    public void ImprimeValor(){ 
+        System.out.println("valor do Camarote inferior: " + super.valorTotal);
+    }
+
     public static void main(String[] args) {
         VIP Ii = new IngressoInferior();
         Ii.ImprimeValor();
